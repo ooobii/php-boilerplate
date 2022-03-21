@@ -9,7 +9,7 @@ The following software is **required** on the host machine:
 The following runs _within_ the virtual machine that is created by Vagrant & hosted by VirtualBox:
   - Base Operating System: [Ubuntu 20.04 LTS](https://wiki.ubuntu.com/FocalFossa/ReleaseNotes?_ga=2.207412563.1314535857.1647823762-132093480.1647178546)
   - Web Hosting Service: [Apache2](https://httpd.apache.org/)
-  - Web Hosting Processor: [PHP 7.3](https://www.php.net/) (_**UNSUPPORTED!**_)
+  - Web Hosting Processor: [PHP](https://www.php.net/)
   - Database Management Service: [PostgreSQL](https://www.postgresql.org/)
 
 
