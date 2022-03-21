@@ -27,6 +27,14 @@ gh repo create <YourRepoName> --template ooobii/php-boilerplate
 The virtual machine requires a few details to be provided in order for it to be provisioned. These details should be created in a `.env` file in the root of your repository. You can clone the `env.example` file to get started quickly.
 
 Here is an outline of the settings required to be set in the `.env` file:
+#### VM Configuration
+| **Variable**       | **Description**                                                                                           |
+|--------------------|-----------------------------------------------------------------------------------------------------------|
+| `MACHINE_IP`       | The IP address to assign the virtual machine (private, local network)                                     |
+| `MACHINE_DISKSIZE` | The size of the hard disk to create for the virtual machine. Disk expands as data is populated with data. |
+| `MACHINE_CPUS`     | The number of CPU cores to allocate to the virtual machine                                                |
+| `MACHINE_MEMORY`   | The amount of RAM (in MB) to assign to the virtual machine.                                               |
+
 #### Git Details
 | **Variable** | **Description**                                                           |
 |--------------|---------------------------------------------------------------------------|
@@ -78,20 +86,6 @@ vagrant halt
 ## Customizing the Machine
 ### Application Source Code
 Files you modify within the `/src` folder of this repository will take immediate effect within the virtual machine - without the need to restart it to apply changes. This folder is "mounted" in the machine as a live directory.
-
-
-### Hardware Allocation
-The virtual machine by default is allocated the following resources from the host machine:
-  - 2 CPU cores.
-  - 1024MB of RAM (1GB).
-  - 10GB of disk space.
-
-To allocate additional CPU/RAM, you can modify the values assigned to the specific provider you're using for the virtual machine (VirtualBox by default).
-
-To update the disk size, modify the following line in the `Vagrantfile` to fit your needs:
-```
-config.vm.disk :disk, size:"10GB", primary: true
-```
 
 
 ### Provisioning
