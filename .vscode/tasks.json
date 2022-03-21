@@ -1,0 +1,25 @@
+{
+    // See https://go.microsoft.com/fwlink/?LinkId=733558
+    // for the documentation about the tasks.json format
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "label": "Destroy VM",
+            "type": "shell",
+            "command": "vagrant destroy -f",
+            "problemMatcher": []
+        },
+        {
+            "label": "Start VM",
+            "type": "shell",
+            "command": "vagrant up",
+            "problemMatcher": []
+        },
+        {
+            "label": "Rebuild VM",
+            "type": "shell",
+            "command": "vagrant destroy -f && vagrant up",
+            "problemMatcher": []
+        }
+    ]
+}
