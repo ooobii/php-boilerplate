@@ -17,7 +17,9 @@ The following runs _within_ the virtual machine that is created by Vagrant & hos
 To use this template repository, you can click the green "Use this template" button at the top of the page, or run the following command
 in the GitHub CLI:
 ```
-gh repo create <YourRepoName> --template ooobii/php-boilerplate
+gh repo create <GitHubUsername>/<YourRepoName> --template ooobii/php-boilerplate
+git clone git@github.com:<GitHubUsername>/<YourRepoName>
+cd <YourRepoName>
 ```
 
 
